@@ -15,7 +15,7 @@
   "scripts": {
     "format": "eslint . --fix --report-unused-disable-directives",
     "push": "cz",
-    "test": "hardhat test",
+    "test": "node -r dotenv/config ./node_modules/.bin/hardhat test",
     "compile": "hardhat compile",
     "balance": "hardhat balance"
   },

@@ -52,3 +52,19 @@ npm install
 Currently, only available commands are `test` and `compile`
 
 WIP
+
+## Contributing
+
+### ENV files
+
+This repository is featuring granular controls fully orthogonal to environment variables as specified by [the twelve-factor app](https://12factor.net) guidelines.
+
+#### Application requirements
+
+In order for the application to run we need the following environment variables set similar to the following example.
+Without these variables the application will fail to start, so in order for the app to start locally we need to create an `.env` file with the following values:
+
+```shell script
+REPORT_GAS=true
+API_KEY_CMC=1d902a3e-a623-4db6-8653-a5efcf69c0dd
+```
